@@ -12,20 +12,20 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Api(description = "图书管理系统")
 public class XiexinController {
-    @PostMapping("/add")
+    @PostMapping("/add2")
     @ApiOperation(value ="添加书籍" )
     @ApiImplicitParams({
             @ApiImplicitParam(name = "Id",value = "书号",paramType = "query",dataType = "int"),
             @ApiImplicitParam(name = "name",value = "书名",paramType = "query",dataType = "String",required = true)
     })
-    public Message add(int Id, String name){
+    public Message add2(int Id, String name){
         return MessageUtil.success("添加书籍成功");
 
     }
 
-    @PostMapping("/delet")
+    @PostMapping("/delet2")
     @ApiOperation(value ="删除书籍" )
-    public Message delet(int Id, String name ){
+    public Message delet2(int Id, String name ){
         return MessageUtil.success("删除书籍成功");
     }
 
