@@ -8,7 +8,7 @@ import java.io.Serializable;
 public class Book implements Serializable {
    @ApiModelProperty(value = "书籍编号",required = true)
     private int id;
-   @ApiModelProperty(value = "书籍名称",required = true)
+   @ApiModelProperty(value = "书籍名称")
     private String name;
 
     public int getId() {
