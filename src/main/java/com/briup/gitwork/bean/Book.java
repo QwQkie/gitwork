@@ -6,12 +6,10 @@ import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 @ApiModel
 public class Book implements Serializable {
-    @ApiModelProperty(value = "图书编号",required = true)
+   @ApiModelProperty(value = "书籍编号",required = true)
     private int id;
-    @ApiModelProperty(value = "图书名称")
-    private  String name;
-    @ApiModelProperty(value = "图书描述")
-    private  String desc;
+   @ApiModelProperty(value = "书籍名称",required = true)
+    private String name;
 
     public int getId() {
         return id;
@@ -27,13 +25,5 @@ public class Book implements Serializable {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getDesc() {
-        return desc;
-    }
-
-    public void setDesc(String desc) {
-        this.desc = desc;
     }
 }
