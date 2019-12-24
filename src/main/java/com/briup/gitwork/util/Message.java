@@ -1,4 +1,4 @@
-package com.briup.cms.util;
+package com.briup.gitwork.util;
 
 /**
  * @program: app01
